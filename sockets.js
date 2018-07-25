@@ -115,7 +115,7 @@ module.exports = function (server, config) {
                 hmac.update(username);
                 credentials.push({
                     username: username,
-                    credential: hmac.digest('base64'),
+                    credential: 'homeo',
                     urls: server.urls || server.url
                 });
             });
